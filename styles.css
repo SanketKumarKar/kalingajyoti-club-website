@@ -110,6 +110,17 @@ body {
     transform: translateX(-50%);
 }
 
+/* Pe9cd */
+[data-aos] {
+    opacity: 0;
+    transition-property: opacity, transform;
+}
+
+[data-aos].aos-animate {
+    opacity: 1;
+}
+
+/* P6fb9 */
 @media (max-width: 768px) {
     .nav-links {
         display: none;
@@ -118,6 +129,28 @@ body {
     .animated-tagline {
         font-size: 2rem;
     }
+}
+
+/* P8516 */
+.menu-toggle {
+    display: none;
+    cursor: pointer;
+}
+
+.menu-toggle i {
+    font-size: 2rem;
+    color: var(--konark-red);
+}
+
+.nav-links.active {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    padding: 1rem;
 }
 
 @keyframes fadeInUp {
