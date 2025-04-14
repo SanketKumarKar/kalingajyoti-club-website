@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,90 +8,272 @@
     <meta name="keywords" content="KalingaJyoti, Odisha, Cultural Club, Dance, Music, Art, Community Events">
     <meta name="author" content="KalingaJyoti Club">
     <title>KalingaJyoti - Odisha Cultural Club</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <!-- Navigation -->
-    <nav class="navbar">
-        <div class="logo">
-            <img src="logo.png" alt="KalingaJyoti Logo">
-            <span class="odia-script">କଳିଙ୍ଗଜ୍ୟୋତି</span>
-        </div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#events">Events</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
+    <header>
+        <nav class="navbar">
+            <div class="container">
+                <div class="logo">
+                    <img src="logo.png" alt="KalingaJyoti Logo">
+                    <span class="odia-script">କଳିଙ୍ଗଜ୍ୟୋତି</span>
+                </div>
+                <div class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#events" class="nav-link">Events</a></li>
+                    <li><a href="#team" class="nav-link">Team</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
-    <section id="home" class="hero" data-aos="fade-up">
+    <section id="home" class="hero">
         <div class="hero-overlay"></div>
-        <div class="hero-content">
-            <h1 class="animated-tagline">Embrace Your Roots<br>Celebrate Odisha!</h1>
-            <button class="cta-button">Join Us Now!</button>
+        <div class="hero-content container" data-aos="fade-up" data-aos-duration="1000">
+            <h1 class="animated-tagline">Embrace Your Roots<br><span class="highlight">Celebrate Odisha!</span></h1>
+            <p class="hero-subtitle">Preserving heritage, creating community, celebrating culture</p>
+            <div class="hero-buttons">
+                <button class="cta-button primary-btn">Join Us Now!</button>
+                <button class="cta-button secondary-btn">Explore Events</button>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section" data-aos="fade-up">
-        <div class="content-wrapper">
-            <h2 class="section-title">About Us</h2>
-            <div class="about-content">
-                <p class="odia-quote">"ଜୟ ଜଗନ୍ନାଥ"<br><span class="translation">(Victory to Lord Jagannath)</span></p>
-                <p>KalingaJyoti is dedicated to preserving and promoting Odisha's rich cultural heritage through dance, music, art, and community events.</p>
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Who We Are</span>
+                <h2 class="section-title">About Us</h2>
+            </div>
+            <div class="about-content" data-aos="fade-up" data-aos-delay="200">
+                <div class="about-image">
+                    <img src="about-image.jpg" alt="KalingaJyoti Cultural Activities">
+                    <div class="pattern-overlay"></div>
+                </div>
+                <div class="about-text">
+                    <p class="odia-quote">"ଜୟ ଜଗନ୍ନାଥ"<br><span class="translation">(Victory to Lord Jagannath)</span></p>
+                    <p>KalingaJyoti is dedicated to preserving and promoting Odisha's rich cultural heritage through dance, music, art, and community events. Founded with a passion for our roots, we create spaces where traditions thrive and community bonds flourish.</p>
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-music"></i>
+                            <h3>Traditional Music</h3>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-mask"></i>
+                            <h3>Classical Dance</h3>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-paint-brush"></i>
+                            <h3>Folk Arts</h3>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Events Gallery -->
-    <section id="events" class="section" data-aos="fade-up">
-        <h2 class="section-title">Our Events</h2>
-        <div class="gallery-grid">
-            <div class="gallery-item" style="background-image: url('event1.jpg')">
-                <div class="hover-caption">Ratha Yatra 2023</div>
+    <section id="events" class="section bg-pattern">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Our Celebrations</span>
+                <h2 class="section-title">Featured Events</h2>
             </div>
-            <!-- Add more gallery items -->
+            <div class="gallery-grid" data-aos="fade-up" data-aos-delay="200">
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background-image: url('event1.jpg')"></div>
+                    <div class="gallery-content">
+                        <h3>Ratha Yatra 2023</h3>
+                        <p>Annual chariot festival celebration</p>
+                        <a href="#" class="event-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background-image: url('event2.jpg')"></div>
+                    <div class="gallery-content">
+                        <h3>Odissi Dance Night</h3>
+                        <p>Classical dance performances</p>
+                        <a href="#" class="event-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                
+                <div class="gallery-item">
+                    <div class="gallery-image" style="background-image: url('event3.jpg')"></div>
+                    <div class="gallery-content">
+                        <h3>Pattachitra Workshop</h3>
+                        <p>Traditional painting techniques</p>
+                        <a href="#" class="event-link">View Details <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="text-center" data-aos="fade-up" data-aos-delay="300">
+                <a href="#" class="view-all-btn">View All Events</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="section testimonials">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-subtitle">Community Voices</span>
+                <h2 class="section-title">What Our Members Say</h2>
+            </div>
+            <div class="testimonial-slider" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"KalingaJyoti has helped me reconnect with my cultural roots in ways I never expected. The community feels like family."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <img src="member1.jpg" alt="Member" class="testimonial-avatar">
+                        <div class="author-info">
+                            <h4>Sweta Patel</h4>
+                            <p>Member since 2020</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Registration Form -->
-    <section id="contact" class="section" data-aos="fade-up">
-        <div class="form-container">
-            <h2 class="section-title">Join Our Community</h2>
-            <form id="registrationForm">
-                <div class="form-group">
-                    <input type="text" placeholder="Full Name" required>
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <div class="contact-wrapper" data-aos="fade-up">
+                <div class="contact-info">
+                    <div class="section-header text-left">
+                        <span class="section-subtitle">Get Involved</span>
+                        <h2 class="section-title">Join Our Community</h2>
+                    </div>
+                    <p>Become part of our growing family and help preserve the rich cultural heritage of Odisha.</p>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>123 Cultural Avenue, Bhubaneswar</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@kalingajyoti.org</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9876543210</span>
+                        </div>
+                    </div>
+                    <div class="social-icons">
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-youtube"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-facebook"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                    </div>
                 </div>
-                <div class="form-group">
-                    <input type="email" placeholder="Email" required>
+                <div class="form-container" data-aos="fade-up" data-aos-delay="200">
+                    <form id="registrationForm">
+                        <div class="form-group">
+                            <input type="text" placeholder="Full Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" placeholder="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" placeholder="Phone Number" required>
+                        </div>
+                        <div class="form-group">
+                            <select required>
+                                <option value="">Select Interest</option>
+                                <option>Odissi Dance</option>
+                                <option>Sambalpuri Crafts</option>
+                                <option>Traditional Music</option>
+                                <option>Cultural Events</option>
+                                <option>Volunteering</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea placeholder="Your Message" rows="4"></textarea>
+                        </div>
+                        <button type="submit" class="diya-button">Join Now <i class="fas fa-arrow-right"></i></button>
+                    </form>
                 </div>
-                <div class="form-group">
-                    <select required>
-                        <option value="">Select Interest</option>
-                        <option>Odissi Dance</option>
-                        <option>Sambalpuri Crafts</option>
-                        <option>Traditional Music</option>
-                    </select>
-                </div>
-                <button type="submit" class="diya-button">Submit</button>
-            </form>
+            </div>
         </div>
     </section>
 
-    <!-- Social Media -->
-    <div class="social-icons">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-youtube"></i></a>
-    </div>
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="logo.png" alt="KalingaJyoti Logo">
+                    <span class="odia-script">କଳିଙ୍ଗଜ୍ୟୋତି</span>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h3>Quick Links</h3>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#about">About Us</a></li>
+                            <li><a href="#events">Events</a></li>
+                            <li><a href="#contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Programs</h3>
+                        <ul>
+                            <li><a href="#">Dance Classes</a></li>
+                            <li><a href="#">Music Workshops</a></li>
+                            <li><a href="#">Cultural Exchange</a></li>
+                            <li><a href="#">Art Exhibition</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h3>Support Us</h3>
+                        <ul>
+                            <li><a href="#">Donate</a></li>
+                            <li><a href="#">Volunteer</a></li>
+                            <li><a href="#">Sponsor</a></li>
+                            <li><a href="#">Partner</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2025 KalingaJyoti. All rights reserved.</p>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <a href="#home" class="back-to-top" id="backToTop"><i class="fas fa-arrow-up"></i></a>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script>
-        AOS.init();
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
     </script>
     <script src="script.js"></script>
 </body>
