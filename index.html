@@ -3,9 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="KalingaJyoti - Odisha Cultural Club dedicated to preserving and promoting Odisha's rich cultural heritage through dance, music, art, and community events.">
+    <meta name="keywords" content="KalingaJyoti, Odisha, Cultural Club, Dance, Music, Art, Community Events">
+    <meta name="author" content="KalingaJyoti Club">
     <title>KalingaJyoti - Odisha Cultural Club</title>
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 </head>
 <body>
     <!-- Navigation -->
@@ -24,7 +28,7 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section id="home" class="hero" data-aos="fade-up">
         <div class="hero-overlay"></div>
         <div class="hero-content">
             <h1 class="animated-tagline">Embrace Your Roots<br>Celebrate Odisha!</h1>
@@ -33,7 +37,7 @@
     </section>
 
     <!-- About Section -->
-    <section id="about" class="section">
+    <section id="about" class="section" data-aos="fade-up">
         <div class="content-wrapper">
             <h2 class="section-title">About Us</h2>
             <div class="about-content">
@@ -44,7 +48,7 @@
     </section>
 
     <!-- Events Gallery -->
-    <section id="events" class="section">
+    <section id="events" class="section" data-aos="fade-up">
         <h2 class="section-title">Our Events</h2>
         <div class="gallery-grid">
             <div class="gallery-item" style="background-image: url('event1.jpg')">
@@ -55,7 +59,7 @@
     </section>
 
     <!-- Registration Form -->
-    <section id="contact" class="section">
+    <section id="contact" class="section" data-aos="fade-up">
         <div class="form-container">
             <h2 class="section-title">Join Our Community</h2>
             <form id="registrationForm">
@@ -84,6 +88,10 @@
         <a href="#"><i class="fab fa-youtube"></i></a>
     </div>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="script.js"></script>
 </body>
 </html>

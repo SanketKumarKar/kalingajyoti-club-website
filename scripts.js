@@ -41,4 +41,13 @@ document.addEventListener('DOMContentLoaded', () => {
     menuToggle.addEventListener('click', () => {
         document.querySelector('.nav-links').classList.toggle('active');
     });
+
+    // AOS initialization
+    AOS.init();
+});
+
+// Event listener for window resize to adjust parallax effect
+window.addEventListener('resize', () => {
+    const scrolled = window.pageYOffset;
+    document.querySelector('.hero').style.backgroundPositionY = `${scrolled * 0.5}px`;
 });
